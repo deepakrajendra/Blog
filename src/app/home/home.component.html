@@ -1,0 +1,103 @@
+<section class="bg-light p-5 banner">
+    <!-- <div class="row">
+      <div class="col">
+          <div class="card post-card bg-light">
+              <div class="card-body">
+                  <h5 class="card-title">latest article</h5>
+                  <div class="card-text">
+                      This is a simple hero unit, a simple jumbotron-style component for calling extra
+                      attention to featured content or information.
+                  </div>
+                  <p class="lead">
+                      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                  </p>
+              </div>
+
+          </div>
+      </div>
+      <div class="col-3">
+          <div class="card">
+              <div class="card-body">
+                  <h1 class="display-5 font-weight-normal text-center">Hi, I'm <span class="my-name">Deepak</span>
+                  </h1>
+                  <p class="lead">I'm a Full Stack Developer who shares programming goodness with the
+                      community❤</p>
+              </div>
+          </div>
+      </div>
+  </div> -->
+
+    <div class="row text-center">
+        <div class="col">
+            <!-- <img src="https://d33wubrfki0l68.cloudfront.net/ca0061c3c33c88b2b124e64ad341e15e2a17af49/c8765/images/alligator-logo3.svg" -->
+            <img src="../../assets/images/logo-new.png" class="jumbotron-logo" width="200" height="200" alt="Home">
+            <h2>Learn Web Development</h2>
+            <p>HTML, CSS, JavaScript, TypeScript & Angular</p>
+        </div>
+    </div>
+</section>
+
+<!-- Recent Posts -->
+<!-- <section class="container text-center p-5 pt-0 pb-3">
+    <h5 class="section-title mb-4 font-weight-normal">⚡ Recent Posts</h5>
+    <div class="row justify-content-center">
+        <div class="col-9">
+            <div class="cards-grid">
+                <a class="card post-card top-post-card cursor-pointer" *ngFor="let link of allLinks"
+                    [routerLink]=[link.route]>
+                    <div class="card-body">
+                        {{link.title}}
+                    </div>
+                </a>
+            </div>
+            <a class="text-center view-all-button m-4 px-3" [routerLink]="['/html']">All Posts</a>
+        </div>
+    </div>
+</section>
+<hr> -->
+
+<!-- Html Posts -->
+<section class="container text-center p-5 pb-3">
+    <h5 class="section-title mb-4 font-weight-normal"><img src="../../assets/images/html-logo.png" alt="Html logo"
+            width="45px"> Html</h5>
+    <div class="row justify-content-center">
+        <div class="col-9">
+            <div class="cards-grid">
+                <a class="card post-card html-post-card cursor-pointer" *ngFor="let link of htmlLinks"
+                    [routerLink]=[link.route]>
+                    <div class="card-body">
+                        {{link.title}}
+                    </div>
+                </a>
+
+                <!-- <a class="card post-card top-post-card cursor-pointer" href="#">
+                    <div class="card-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, aperiam!
+                    </div>
+                </a>
+                <a class="card post-card top-post-card cursor-pointer" href="#">
+                    <div class="card-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, aperiam!
+                    </div>
+                </a>
+                <a class="card post-card top-post-card cursor-pointer" href="#">
+                    <div class="card-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, aperiam!
+                    </div>
+                </a>
+                <a class="card post-card top-post-card cursor-pointer" href="#">
+                    <div class="card-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, aperiam!
+                    </div>
+                </a>
+                <a class="card post-card top-post-card cursor-pointer" href="#">
+                    <div class="card-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, aperiam!
+                    </div>
+                </a> -->
+            </div>
+            <a class="text-center view-all-button m-4 px-3" [routerLink]="['/html']">All Posts</a>
+        </div>
+    </div>
+</section>
+<hr>

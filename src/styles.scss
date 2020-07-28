@@ -1,0 +1,147 @@
+/* include CSS for prism toolbar */
+@import '~prismjs/plugins/toolbar/prism-toolbar.css';
+/* check node_modules/prismjs/themes/ for the available themes */
+@import '~prismjs/themes/prism-tomorrow';
+/* You can add global styles to this file, and also import other style files */
+.logo{
+    position: absolute;
+    top:3px;
+}
+
+.nav-link{
+    padding-left: 1em;
+    padding-right: 1em;
+    border-bottom: 2px solid transparent;
+
+} 
+
+.nav-link:hover {
+    border-bottom: 2px solid green;
+}
+
+.bg-light{
+    background-color: #eff3f8!important;
+}
+
+hr{
+    width:15%;
+    height: 5px;
+    border:0px;
+    background-color: var(--yellow)
+
+}
+
+.cards-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-gap:1em;
+}
+
+.post-card{
+    position: relative;
+    background-color: var(--light);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:var(--green);
+    box-shadow:  4px 4px rgba(67,38,100,0.15);
+}
+
+.post-card::before{
+    content: '';
+    /* width: 1.2em;
+    height: 1.2em; */
+    width: 0; 
+  height: 0; 
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  transform: rotate(-46deg);
+  position: absolute;
+  top:-2px;
+  left:-11px;
+}
+
+.post-card:hover{
+    text-decoration: none;
+    transform: translateY(-2px);
+    color:var(--green);
+}
+
+.top-post-card::before{
+  border-bottom: 15px solid var(--green);
+}
+
+.html-post-card::before{
+    border-bottom: 15px solid var(--orange);
+}
+ 
+
+// posts
+
+.markdown{
+font-size: 1.3em;
+line-height: 1.4;
+
+pre{
+    border-radius: 5px;
+}
+
+}
+
+:root {
+    --main-color: #E6098B;
+      --bg-color: #03120E;
+  }
+  .logo-svg {
+   background-color: var(--bg-color);
+   overflow: hidden;
+   text-align:center;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+  }
+  
+//   body,
+//   html {
+//    height: 100%;
+//    width: 100%;
+//    margin: 0;
+//    padding: 0;
+//   }
+  
+  svg {
+   width: 100%;
+   height: 100%;
+   visibility: hidden;
+   
+  }
+  
+  .liquid {
+      fill:var(--main-color);
+  }
+  #bubbleGroup {
+      stroke: var(--main-color);
+      fill: #222932
+  }
+  .poly {
+      fill: #3A86FF;
+  }
+  
+  .glass {
+      opacity: 0.2
+  }
+  
+  #flask {
+      opacity: 0.5;
+      fill:#003459;
+      stroke: #003459;
+  }
+  
+  .gsap-3-logo {
+  width: 20vw;
+  max-width: 150px;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  }

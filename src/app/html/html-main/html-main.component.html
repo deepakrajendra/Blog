@@ -1,0 +1,43 @@
+  <!-- Recent Posts -->
+  <section class="container text-center p-5 pb-3">
+    <h5 class="section-title mb-4 font-weight-normal">🏆 Recent Posts</h5>
+    <div class="row justify-content-center">
+        <div class="col-9"> 
+            <div class="cards-grid">
+                <a class="card post-card top-post-card cursor-pointer" *ngFor="let link of htmlLinks" [routerLink] = [link.route] >
+                    <div class="card-body">
+                        {{link.title}}
+                    </div>
+                </a>
+  
+                <!-- <a class="card post-card top-post-card cursor-pointer" href="#">
+                    <div class="card-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, aperiam!
+                    </div>
+                </a>
+                <a class="card post-card top-post-card cursor-pointer" href="#">
+                    <div class="card-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, aperiam!
+                    </div>
+                </a>
+                <a class="card post-card top-post-card cursor-pointer" href="#">
+                    <div class="card-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, aperiam!
+                    </div>
+                </a>
+                <a class="card post-card top-post-card cursor-pointer" href="#">
+                    <div class="card-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, aperiam!
+                    </div>
+                </a>
+                <a class="card post-card top-post-card cursor-pointer" href="#">
+                    <div class="card-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, aperiam!
+                    </div>
+                </a> -->
+            </div>
+            <a class="text-center view-all-button m-4 px-3" [routerLink]="['/html']">All Posts</a>
+        </div>
+    </div>
+  </section>
+  <hr>
